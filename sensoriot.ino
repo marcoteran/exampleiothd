@@ -22,6 +22,12 @@ void setup() {
 	dht.begin();
 
 	// WiFi configuration (Cesar)
+	Serial.println("Conectando a WiFi...");
+    WiFi.begin(ssid, password);
+
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(1000);
+        Serial.println("Conexión WiFi establecida");
 Int status =0;
 
 	
