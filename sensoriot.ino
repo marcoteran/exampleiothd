@@ -11,7 +11,7 @@
 // Configuration
 void setup() {
 	// Serial configuration (JUAN CAMILO)
-
+	Serial.begin(9600);
 
 	// DHT configuration (JOSH)
 
