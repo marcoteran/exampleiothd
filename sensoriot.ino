@@ -11,8 +11,8 @@
 // Configuration
 void setup() {
 	// Serial configuration (JUAN CAMILO)
-
-
+	Serial.begin(9600); //Velocidad fijada en 9600 para el Serial
+	Serial.println("|----Inicio del Serial----|"); //Mensaje de incio
 	// DHT configuration (JOSH)
 
 
