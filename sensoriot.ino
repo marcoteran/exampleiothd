@@ -12,7 +12,7 @@
 void setup() {
 	// Serial configuration (JUAN CAMILO)
 	Serial.begin(9600);
-
+	Serial.println("Inicio del Serial");
 	// DHT configuration (JOSH)
 
 
