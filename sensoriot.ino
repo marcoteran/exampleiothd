@@ -1,9 +1,13 @@
 // ARCHIVO SENSOR IOT
 
 // Declaración de Variables
+float t;
+float h;
 // Internet
 
 // DHT
+#include <DHT.h>
+#define DHTPIN 18
 
 // Otras
 
@@ -14,7 +18,8 @@ void setup() {
 
 
 	// DHT configuration (JOSH)
-
+	DHT dht(DHTPIN, DHT11);
+	dht.begin();
 
 	// WiFi configuration (Cesar)
 Int status =0;
@@ -29,9 +34,8 @@ Int status =0;
 // Loop de polling
 void loop() {
 	// Código de lectura de los sensores (JOSH)
-
-	t =
-	h = 
+	leerDatosDHT();
+	delay(1000); 
 	// Encienda y apague un LED (Daniel)
 
 
@@ -41,7 +45,10 @@ void loop() {
 
 
 // Funcion Leer datos del DHT 11 (JOSH)
-
+void leerDatos(){
+	t = dht.readTemperature();
+	h = dht.readHumidity();
+}
 // Funcion Encender y apagar el LED (Daniel)
 Void led-on-off(){
 If(digitalRead(2)==1&&status=0){
