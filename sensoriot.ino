@@ -17,7 +17,9 @@ void setup() {
 
 
 	// WiFi configuration (Cesar)
+Int status =0;
 
+	
 
 }
 
@@ -41,3 +43,14 @@ void loop() {
 // Funcion Leer datos del DHT 11 (JOSH)
 
 // Funcion Encender y apagar el LED (Daniel)
+Void led-on-off(){
+If(digitalRead(2)==1&&status=0){
+Status=1;
+digitalWrite(3,HIGH);
+}
+If(digitalRead(2)==1&&status=1){
+Status=0;
+digitalWrite(3,Low);
+}
+
+
