@@ -43,7 +43,8 @@ void loop() {
 	leerDatosDHT();
 	delay(1000); 
 	// Encienda y apague un LED (Daniel)
-
+        led-on-off();
+	
 
 	// Mostrar datos por serial (Cesar) - t,h
   
