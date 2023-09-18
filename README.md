@@ -3,7 +3,7 @@
 Realizado por los estudiantes:
 - Josh
 - Daniel
-- Juan Camilo
+- Juan Camilo Peña Espinosa (Dev on SerialBegin)
 - Cesar
 
 Trabajo en equipo.
